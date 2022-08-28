@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilis.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
+    <style>
+        .cool{
+            margin: 10px 0;
+            overflow: hidden;
+            max-width: 200vw;
+            max-height: 80vh;
+        }
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 2000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About</a> </li>
+                <li> <a href="">Contact</a> </li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="km" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- <div class="slider">
+                <img src="https://source.unsplash.com/gySMaocSdqs/1000x200shopping" alt="" height="600" width="2000">
+                
+            </div> -->
+            <div class="slideshow-container">
+            
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade cool">
+                  <div class="numbertext"></div>
+                  <img src="https://timebusinessnews.com/wp-content/uploads/eCommerce-Website-Components-photo.jpeg" style="width:100% ">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade cool">
+                  <div class="numbertext"></div>
+                  <img src="https://images.chinahighlights.com/allpicture/2017/03/36a97374b583420192ef523a_cut_800x500_61.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade cool">
+                  <div class="numbertext"></div>
+                  <img src="https://www.digitalmenta.com/wp-content/uploads/2019/04/potenciar-campanas-shopping.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+            <!-- Slideshow container -->
+
+
+
+            <div class="card">
+                <h2 class="my-1">Join for the Cricket Fun</h2>
+                <div class="Cards">
+                    <div class="card-items">
+                        <img src="https://lagatar24.com/wp-content/uploads/2022/02/1088580.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Cricket bats & bowls </p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://www.sportsmirchi.com/wp-content/uploads/2018/06/ICC-World-Cup-2023-Schedule.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Cricket World Cup  </p>
+                            <p class="text-center my-2"> Min 50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://static.abplive.com/wp-content/uploads/2020/07/07220239/Dhoni-2.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Ms.Dhoni Cricketing Shots </p>
+                            <p class="text-center my-2">10% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://c.ndtvimg.com/2022-07/6h28sk5g_virat-kohli-afp_625x300_18_July_22.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2"> Virat Kholi </p>
+                            <p class="text-center my-2"> 10% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_2_5x/sources/r1/cms/prod/665/1310665-h-7943d88f118b" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Rohit Sharma bats </p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://media.istockphoto.com/photos/cricket-bat-and-ball-on-cricket-pitch-picture-id1312835994?b=1&k=20&m=1312835994&s=170667a&w=0&h=Gdj_igpTeAoenS310h4UblZ4_xJ0vTmhAuOZ2owO8Hw=" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Cricket bowls </p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJRPv1lMMtx16BWdw2XelsP20wSpY_Q16WabfaBULPOLwwBcpXogUtFvjodpcEm7yThVs&usqp=CAU" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Bowls</p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpJEet5MhDaJ9OsdNy1E4WCoDy3X5KuNM_Ig5mqPwMC_-CTKSiPiRREAomtSO6Sf_75M&usqp=CAU" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Stumpsand Balls </p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://media.istockphoto.com/photos/leather-cricket-ball-resting-on-a-cricket-bat-placed-on-green-grass-picture-id1256618106?b=1&k=20&m=1256618106&s=170667a&w=0&h=ov1Em5P8vDl-QsBC7PhTnuztsdsMVwmNjLvN2jAINpQ=" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Bats and Bowls</p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+                
+
+
+            </div>
+
+            <div class="card">
+                <h2 class="my-1">Best Phone Deals</h2>
+                <div class="Cards">
+                    <div class="card-items">
+                        <img src="https://www.cnet.com/a/img/resize/eabd239642878785575800cb4b1a52ee4ccc1bc9/2020/08/18/b7168aea-9f7e-47bb-9f31-4cb8ad92fbc7/lg-note-20-ultra-5g-iphone-11-se-google-pixel-4a-lg-velvet-6133.jpg?auto=webp&fit=crop&height=630&width=1200" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">One plus  </p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://i.pcmag.com/imagery/reviews/07GmIupznWhAzDQ3Z7li99a-1..v1632849626.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Iphone-11</p>
+                            <p class="text-center my-2">10% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://www.zdnet.com/a/img/resize/f8dfa52f386fdb6a20e051ae06624b4744afe2a3/2021/09/30/8929b934-eba5-4616-9566-c343be863d8d/iphone-13-pro-pro-max-1.jpg?width=1200&fit=bounds&auto=webp" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Iphone-12</p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://i.insider.com/622a29256ec7c20019cd7ddd?width=1200&format=jpeg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">One plus 9 pro </p>
+                            <p class="text-center my-2">10% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://www.androidauthority.com/wp-content/uploads/2018/10/Palm-Phone-9-of-13.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Google pixels-1 </p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://robbreport.com/wp-content/uploads/2021/11/iphonex.jpg?w=660" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Google pixels-2</p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSODfr6JZR_iRYJWEpx2rB8Qn3Ibe90FrsNig&usqp=CAU" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Motorola </p>
+                            <p class="text-center my-2">10% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/05/What-Are-the-Newest-Android-Phones-Out-Right-Now1.jpg?fit=1920%2C1080&ssl=1" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">One plus 10pro </p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+                
+
+
+            </div>
+
+            <div class="card">
+                <h2 class="my-1">Furniture Deals</h2>
+                <div class="Cards">
+                    <div class="card-items">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg?crop=1.00xw:0.502xh;0,0.423xh&resize=1200:*" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Barcelona chair </p>
+                            <p class="text-center my-2">40% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://wakefit-co.s3.ap-south-1.amazonaws.com/img/product-thumbnails/napper-furniture.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">bentwood furniture</p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/XJ/NO/BT/68434442/bedroom-furniture-500x500.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Trundle bed</p>
+                            <p class="text-center my-2">30% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://media.designcafe.com/wp-content/uploads/2019/12/17054440/living-room-furniture-design-for-your-home.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Court cupboard</p>
+                            <p class="text-center my-2">50% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://www.woodenstreet.com/images/furniture/deal-1.jpg?v1" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Klismos</p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://www.jodhpurifurniture.com/assets/images/Tallboy%20Bedroom.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Platform rocker</p>
+                            <p class="text-center my-2">30% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://content3.jdmagicbox.com/comp/durg/k4/9999px788.x788.140504164552.a6k4/catalogue/gupta-furniture-mall-durg-ho-durg-furniture-dealers-sw1h6x6ie3.jpg?clr=423824" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Windsor chair</p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://www.ikea.com/images/laeckoe-series-da47e8337634ec43b1199070f1f68de0.jpg?f=s" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Wing chair </p>
+                            <p class="text-center my-2">40% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+                
+
+
+            </div>
+
+            <div class="card">
+                <h2 class="my-1">Best Cloths Deals</h2>
+                <div class="Cards">
+                    <div class="card-items">
+                        <img src="https://cdn-fnknc.nitrocdn.com/jwqHRGAzpUgGskUSHlppNQzwuXgXIKwg/assets/static/optimized/rev-07ec01f/wp-content/uploads/2021/12/luca-faloni-denim-shirt.jpeg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">The Crew Neck style </p>
+                            <p class="text-center my-2">10% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/types-of-shirts-for-men-bewakoof-blog-1-1610963787.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2"> White t shirts</p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://cdn.shopify.com/s/files/1/0752/6435/products/vishgreen_8ead86c5-46c2-41fe-b370-a4b5735302b7.jpg?v=1637703016" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Pocket style</p>
+                            <p class="text-center my-2">30% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://image.shutterstock.com/image-photo/closeup-female-cotton-handmade-cloths-260nw-1516619060.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Slim fit t shirt </p>
+                            <p class="text-center my-2">30% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20210420/R70k/607ecc5baeb269a9e3971fef/-1117Wx1400H-462323964-green-MODEL.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">The Scoop Neck style </p>
+                            <p class="text-center my-2">40% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2hpcnR8ZW58MHx8MHx8&w=1000&q=80" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">Polo t shirt collar styles</p>
+                            <p class="text-center my-2">10% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://cf.ltkcdn.net/fashion-history/images/std/210749-800x530r1-Man-wearing-shirt.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2"> The Henley Y neck style</p>
+                            <p class="text-center my-2">30% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <img src="https://thumbs.dreamstime.com/b/attractive-man-taking-off-shirt-confident-his-appealing-bearded-guy-business-style-hot-day-outdoors-handsome-fashion-model-sexy-190261056.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center my-2">The Crew Neck style </p>
+                            <p class="text-center my-2">20% off </p>
+                            <p class="text-center my-2">Grab it Now!</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+            </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; Mycart.com</p>
+    </footer>
+
+
+    <!-- Script for slider -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+
+</html>

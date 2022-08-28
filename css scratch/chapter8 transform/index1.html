@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            /* transform: translate(); */
+            /* transform: translate(34px,156px); */
+            /* transform-origin: 0 ;  */
+            /* transform: scaleX(8); */
+            /* transform: scaleY(8); */
+            /* transform: skew(4deg,6deg); */
+
+        }
+        img:hover {
+            width: 56px;
+        }
+        img{
+            /* width: 455px;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in; */
+        transition: width 1s ease-in 2s;
+
+        }
+    </style>
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+      <img src="https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg" alt="">
+        </div>
+      <button id="btn">Toggle</button>
+    </div>
+    
+</body>
+<!-- <script>
+    btn.addEventListner("click",()=>{
+        myImage.style.width="546px";
+    })
+</script> -->
+</html>

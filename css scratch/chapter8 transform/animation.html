@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+           
+        }
+        .box{
+            height: 300px;
+            background-color: red;
+            width: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate-reverse; */
+            animation: widthAnimate 3s ease-in-out 0.5s 4 alternate-reverse;
+        }
+        img{
+            animation: widthAnimate 2s ease-in-out 0.5s infinite alternate-reverse;
+
+        }
+        @keyframes widthAnimate {
+            from{
+                width:30px;
+                height:30px;
+            }
+            to{
+                width: 500px;
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box">
+        </div> -->
+        <img src="spider.png" alt="" width="344">
+    </div>
+    
+</body>
+</html>
