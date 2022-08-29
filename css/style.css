@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+:root {
+    --main-bg-color: #2874f0;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+   position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color:var(--main-bg-color);
+    color: white;
+    /* padding: 10px; */
+    height: 7vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 20px;
+    width: 160px;
+    padding: 0 25px;
+    
+}
+nav{
+    /* justify-content: center; */
+    display: flex;
+    height: 58px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+nav ul li{
+    list-style: none;
+    padding: 0  10px;
+    font-size: 20px;
+    margin: 15px ;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+}
+ul li a:hover{
+    /* color: rgb(72, 74, 205); */
+    font-weight: bold;
+}
+.search{
+    /* display: flex;
+   justify-content: center; to center the elements in vertical direction */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#km{
+    width: 30vw;
+    height: 20px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px ;
+}
+.slider{
+    /* margin: auto;
+    width: 80vw; */
+    display: flex;
+    margin: 12px 80px ;
+    overflow: hidden;
+}
+.Cards{
+    display: flex;
+    /* overflow: hidden; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow: auto;
+}
+.card{
+
+    /* display:; */
+    /* background-color: var(--main-bg-color); */
+    max-width: 91vw;
+    margin:  37px auto;
+    padding:  0 20px;
+    /* border:2px solid black; */
+    font-family: 'Ubuntu', sans-serif;
+}
+.card h2{
+    font-family: 'Merriweather', serif;
+}
+
+.card-items{
+    width: 10vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction:column;
+    margin: 0 35px ;
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+.card img{
+    height: 200px;
+    width: 200px;
+}
+.container{
+    height: 320vh;
+}
+footer{
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+.fun{
+    animation: animatedbox 2s ease-in-out  3s  infinite  alternate-reverse ;
+
+}
+.animation1{
+    /* background-color: red; */
+    height: 55vh;
+}
+@keyframes animatedbox {
+    from{
+        width: 50px;
+        height: 50px;
+    }
+    to{
+        height: 50vh;
+        width: 100vw;
+    }
+    
+}
